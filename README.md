@@ -224,22 +224,6 @@ Training logs (loss curves, mIoU per epoch) are saved to `logs/` during training
 
 ---
 
-## 📝 Citation
-
-If you use this code or dataset in your research, please cite our paper:
-
-```bibtex
-@article{sahoo2025zero,
-  title={Zero-Shot Affordance Detection Under Occlusion via Occlusion-Aware Training on Raw Point Clouds},
-  author={Sahoo, Ranjan Kumar and Charan, A Sai},
-  journal={arXiv preprint},
-  year={2025},
-  url={https://github.com/RKSAHOO4414/Term_paper_2}
-}
-```
-
----
-
 ## 🙏 Acknowledgements
 
 - **3D AffordanceNet** benchmark: [Deng et al., CVPR 2021](https://arxiv.org/abs/2103.04900)
