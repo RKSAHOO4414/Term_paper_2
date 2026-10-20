@@ -238,7 +238,7 @@ This project is licensed under the **MIT License**—see the [LICENSE](LICENSE) 
 
 ---
 
-## 📧 Contact
+## 📧 Contact:
 
 **Ranjan Kumar Sahoo**  
 PG Scholar, ASAC, Alliance University, Bengaluru, India  
