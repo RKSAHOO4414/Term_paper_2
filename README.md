@@ -67,25 +67,66 @@ We propose a training framework that enables zero-shot affordance detection unde
 ```
 Term_paper_2/
 ├── README.md
-├── requirements.txt
-├── configs/
-│   └── default.yaml
-├── data/
-│   └── preprocess.py          # Download and prepare 3D AffordanceNet
-├── models/
-│   ├── dgcnn.py               # DGCNN architecture
-│   └── loss.py                # Focal BCE + Dice loss
-├── utils/
-│   ├── occlusion.py           # Viewpoint-based occlusion augmentation
-│   ├── sampler.py             # Balanced batch sampler
-│   └── metrics.py             # mIoU computation
-├── train.py                   # Training script
-├── evaluate.py                # Zero-shot evaluation script
-├── grasp_simulation/
-│   ├── pybullet_grasp.py      # Grasp execution in PyBullet
-│   └── run_trials.py          # 50-trial grasp evaluation
-└── notebooks/
-    └── demo.ipynb             # Quick-start demo
+├── figures/                                      # Figures generated from experiments
+│   ├── fig_ablation_bar.pdf
+│   ├── fig_ablation_bar1.pdf
+│   ├── fig_method_overview.pdf
+│   ├── fig_method_overview1.pdf
+│   └── fig_method_overview2.pdf
+│
+├── final_model_success/                          # Final successful model
+│   ├── 1.txt
+│   ├── 3rd_research_experiment11.ipynb           # ← Notebook
+│   └── best_geoaff.pth
+│
+├── model_success_1/                              # Earlier successful model
+│   ├── 1.txt
+│   ├── 3rd_research_experiment10.ipynb           # ← Notebook
+│   ├── best_geoaff (1).pth
+│   └── best_geoaff.pth
+│
+├── Experiment_17_Model_improved_Failed/          # Experiment 17 (failed improvement)
+│   ├── 3rd_research_experiment17.ipynb           # ← Notebook
+│   ├── best_improved.pth
+│   ├── history_improved.json
+│   └── training_curves_improved.png
+│
+├── ablation_experiment_model/                    # Ablation: XYZ 3D baseline
+│   ├── 3rd_research_ablation_experiment12.ipynb  # ← Notebook
+│   ├── best_xyz3d.pth
+│   └── history_xyz3d.json
+│
+├── ablation_experimement_model_2/                # Ablation: Geometry 7D features
+│   ├── 3rd_research_ablation_experiment13.ipynb  # ← Notebook
+│   ├── best_geo7d (1).pth
+│   ├── best_geo7d.pth
+│   └── history_geo7d.json
+│
+├── ablation_1_no_occlusion_augmentation_experiment/  # Ablation: No occlusion augmentation
+│   ├── 3rd_research_ablation_experiment14.ipynb  # ← Notebook
+│   ├── best_abl_no_occ.pth
+│   └── history_abl_no_occ.json
+│
+├── ablation_2_no_balanced_sampleing_experiment/  # Ablation: No balanced sampling
+│   ├── 3rd_research_ablation_experiment15.ipynb  # ← Notebook
+│   ├── best_abl_occ_no_bal.pth
+│   └── history_abl_occ_no_bal.json
+│
+├── ablation_3_no_focal_loss_experiment/          # Ablation: No focal loss
+│   ├── 3rd_research_ablation_experiment16 (1).ipynb  # ← Notebook
+│   ├── best_abl_occ_no_focal.pth
+│   └── history_abl_occ_no_focal.json
+│
+└── faild_model_Without_occlusion/                # Failed model without occlusion
+    ├── 1.txt
+    ├── 3rd_research_experiment6.ipynb            # ← Notebook
+    ├── 3rd_research_experiment7.ipynb            # ← Notebook
+    ├── 3rd_research_experiment8.ipynb            # ← Notebook
+    ├── best_model_weighted (1).pth
+    ├── best_model_weighted.pth
+    ├── best_multitask.pth
+    ├── best_part_detector.pth
+    └── ... (other checkpoint files)
 ```
 
 ---
