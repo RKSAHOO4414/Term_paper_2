@@ -196,17 +196,6 @@ python grasp_simulation/run_trials.py \
 
 ---
 
-## 📈 Results and Logs
-
-All experimental results reported in the paper are available in the `results/` directory:
-
-```
-results/
-├── main_results.csv
-├── ablation_study.csv
-├── per_class_iou.csv
-└── grasp_simulation.csv
-```
 
 Training logs (loss curves, mIoU per epoch) are saved to `logs/` during training.
 
